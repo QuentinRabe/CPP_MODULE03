@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Scavtrap.hpp                                       :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/06 23:22:16 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/06 23:39:22 by arabefam         ###   ########.fr       */
+/*   Created: 2025/03/06 22:51:12 by arabefam          #+#    #+#             */
+/*   Updated: 2025/03/07 00:32:07 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SCAVTRAP_HPP
-# define SCAVTRAP_HPP
+#include "FragTrap.hpp"
 
-# include "ClapTrap.hpp"
+int	main( void ) {
+	FragTrap	beepboop("BeepBoop");
 
-class	ScavTrap : public ClapTrap {
-	public:
-		ScavTrap( std::string clapTrapName );
-		ScavTrap( ScavTrap const& src );
-		~ScavTrap( void );
-		ScavTrap&	operator=( ScavTrap const& rhs );
-		void	guardGate( void ) const;
-};
-
-#endif
+	beepboop.highFivesGuys();
+	return (0);
+}
