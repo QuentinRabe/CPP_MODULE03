@@ -6,7 +6,7 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 23:22:16 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/06 23:39:22 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/07 03:43:25 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class	ScavTrap : public ClapTrap {
 		~ScavTrap( void );
 		ScavTrap&	operator=( ScavTrap const& rhs );
 		void	guardGate( void ) const;
+		void	attack(const std::string& target );
 };
 
 #endif
