@@ -6,7 +6,7 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 21:55:10 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/10 13:42:56 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/10 14:18:15 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ ClapTrap::ClapTrap( void ): name("RoboRitzy"), hitPoints(10), energyPoints(10), 
 }
 
 ClapTrap::ClapTrap( std::string clapTrapName ): name(clapTrapName), hitPoints(10), energyPoints(10), attackDamage(0) {
+	std::cout << "Name = " << this->name << std::endl;
 	std::cout << "[ ClapTrap ] Param. constructor called" << std::endl;
 }
 
@@ -43,6 +44,13 @@ ClapTrap&	ClapTrap::operator=( ClapTrap const& rhs ) {
 	this->energyPoints = rhs.energyPoints;
 	this->attackDamage = rhs.attackDamage;
 	return (*this);
+}
+
+//------------------------------------------------------------------------------
+// Operator overload
+//------------------------------------------------------------------------------
+std::string	ClapTrap::getName( void ) const {
+	return (this->name);
 }
 
 //------------------------------------------------------------------------------

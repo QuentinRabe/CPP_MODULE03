@@ -6,12 +6,13 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 21:55:10 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/10 12:55:06 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/10 13:43:48 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include <iostream>
+#include <iomanip>
 
 //------------------------------------------------------------------------------
 // Constructors & Destructors
@@ -78,8 +79,8 @@ void	ClapTrap::beRepaired( unsigned int amount ) {
 }
 
 void	ClapTrap::displayClapTrapInfos( void ) const {
-	std::cout << RED_BLD "󰋑" RESET << " " << this->hitPoints << " ";
-	std::cout << YELLOW_BLD "" RESET << " " << this->energyPoints << std::endl;
+	std::cout << "❤️" << " " << std::setw(3) << std::setfill(' ') << std::left << this->hitPoints << " ";
+	std::cout << "⚡" << " " << std::setw(3) << std::setfill(' ') << std::left << this->energyPoints << std::endl;
 }
 
 //------------------------------------------------------------------------------
