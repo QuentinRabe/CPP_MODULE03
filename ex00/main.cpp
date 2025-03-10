@@ -6,14 +6,14 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 22:51:12 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/06 22:54:57 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/10 12:40:02 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 int	main( void ) {
-	ClapTrap	bipbop("BipBop");
+	ClapTrap	bipbop;
 
 	bipbop.attack("RoboRitzy");
 	bipbop.takeDamage(2);

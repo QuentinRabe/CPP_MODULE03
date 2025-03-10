@@ -6,22 +6,17 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/06 22:51:12 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/06 23:42:51 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/10 13:16:29 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Scavtrap.hpp"
+#include "ScavTrap.hpp"
 
 int	main( void ) {
-	ScavTrap	roboritzy("RoboRitzy");
-	ScavTrap	bipbop("BipBop");
+	ScavTrap	def;
 
-	roboritzy.attack("BipBop");
-	bipbop.takeDamage(20);
-	bipbop.beRepaired(5);
-	roboritzy.attack("BipBop");
-	roboritzy.takeDamage(20);
-
-	bipbop.guardGate();
+	def.attack("Beepboop");
+	def.takeDamage(500);
+	def.beRepaired(500);
 	return (0);
 }
