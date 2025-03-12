@@ -6,7 +6,7 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 12:56:54 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/10 14:15:27 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/12 08:50:01 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,14 @@ ScavTrap::ScavTrap( void ): ClapTrap() {
 	std::cout << "[ ScavTrap ] Default constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap( std::string value ): ClapTrap(value.append("_clap_name")) {
+ScavTrap::ScavTrap( std::string value ): ClapTrap(value) {
 	this->hitPoints = 100;
 	this->energyPoints = 50;
 	this->attackDamage = 20;
 	std::cout << "[ ScavTrap ] Param. constructor called" << std::endl;
 }
 
-ScavTrap::ScavTrap( ScavTrap const& src ) {
+ScavTrap::ScavTrap( ScavTrap const& src ): ClapTrap(src) {
 	*this = src;
 	std::cout << "[ ScavTrap ] Copy constructor called" << std::endl;
 }

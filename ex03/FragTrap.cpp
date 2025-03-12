@@ -6,7 +6,7 @@
 /*   By: arabefam <arabefam@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/10 12:56:54 by arabefam          #+#    #+#             */
-/*   Updated: 2025/03/10 14:17:17 by arabefam         ###   ########.fr       */
+/*   Updated: 2025/03/12 08:48:36 by arabefam         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,14 +26,14 @@ FragTrap::FragTrap( void ): ClapTrap() {
 	std::cout << "[ FragTrap ] Default constructor called" << std::endl;
 }
 
-FragTrap::FragTrap( std::string value ): ClapTrap(value.append("_clap_name")) {
+FragTrap::FragTrap( std::string value ): ClapTrap(value) {
 	this->hitPoints = 100;
 	this->energyPoints = 100;
 	this->attackDamage = 30;
 	std::cout << "[ FragTrap ] Param. constructor called" << std::endl;
 }
 
-FragTrap::FragTrap( FragTrap const& src ) {
+FragTrap::FragTrap( FragTrap const& src ): ClapTrap(src) {
 	*this = src;
 	std::cout << "[ FragTrap ] Copy constructor called" << std::endl;
 }
